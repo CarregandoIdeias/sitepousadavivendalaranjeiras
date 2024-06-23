@@ -1,0 +1,184 @@
+
+/* Define a fonte padrão como Open Sans */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a, button, footer, navbar, section {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+        body {
+
+         background-color: #f9f9f9;
+        }
+
+
+        .contact-form {
+    background-color: #FFFFFF; /* Cor de fundo branca */
+    color: #000; /* Cor do texto preta */
+    text-align: center; /* Centraliza o texto */
+    padding: 8px 0; /* Espaçamento interno */
+    font-size: 14px;
+}
+
+        /*------ INÍCIO TOPO ENDEREÇO ------*/
+/* Estilo para a seção de informações de contato */
+.contact-info {
+    background-color: #FFFFFF; /* Cor de fundo branca */
+    color: #000; /* Cor do texto preta */
+    text-align: center; /* Centraliza o texto */
+    padding: 8px 0; /* Espaçamento interno */
+    font-size: 12px;
+}
+
+/* Barra amarela */
+.yellow-bar {
+    height: 10px;
+    background-color: #F29F05;
+}
+
+.contact-info .fas.fa-map-marker-alt {
+    margin-right: 5px; /* Espaçamento à direita do ícone */
+}
+
+/*------ INÍCIO LOGOTIPO ------*/
+/* Estilo para a imagem do logotipo */
+.navbar-logo {
+    height: 80px; /* Reduz a altura para um visual mais elegante */
+    width: auto;
+}
+
+/*------ INÍCIO BARRA DE NAVEGAÇÃO ------*/
+/* Estilo para a barra de navegação */
+.navbar-custom {
+    background-color: #f0f0f0; /* Cor de fundo mais suave */
+    padding: 10px 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra mais definida */
+}
+
+/*------ INÍCIO MENU ------*/
+/* Estilo para os links de navegação */
+.nav-link {
+    color: #333; /* Cor do texto mais suave */
+    padding: 10px 20px; /* Espaçamento interno */
+    transition: all 0.3s ease-in-out; /* Transição suave */
+    text-decoration: none; /* Remove sublinhado */
+    border-radius: 5px; /* Cantos arredondados */
+    background-color: transparent; /* Fundo transparente inicialmente */
+    margin: 0 10px; /* Espaçamento entre cada item de menu */
+}
+
+.nav-link:hover {
+    color: #fff; /* Cor branca do texto durante hover */
+    background-color: #467302; /* Fundo verde durante hover */
+}
+
+/* Responsividade: dispositivos móveis */
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: flex; /* Mantenha a disposição flexível */
+        flex-direction: column; /* Organize os itens de menu em coluna */
+    }
+    
+    .nav-link {
+        margin: 5px 0; /* Espaçamento vertical entre os links */
+        border-radius: 5px; /* Cantos arredondados para cada item de menu */
+        width: auto; /* Permita que os itens se ajustem ao conteúdo */
+    }
+    
+    .nav-link:hover {
+        background-color: transparent; /* Mantém o fundo transparente */
+        text-decoration: underline; /* Adiciona sublinhado durante hover */
+        color: #467302; /* Cor verde para o texto durante hover */
+    }
+}
+
+/* Botão de pré-reserva */
+.btn-warning {
+    background-color: #F29F05;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: #467302; /* Cor de fundo verde durante hover */
+    color: #fff; /* Cor do texto branca durante hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para destaque */
+}
+
+        .section-title {
+            color: #333333;
+        }
+
+        .list-group-item {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .list-group-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .list-group-item-title {
+            color: #333333;
+            font-weight: bold;
+        }
+
+        .list-group-item-text {
+            color: #666666;
+        }
+
+        .btn-warning {
+            background-color: #ffc107;
+            border-color: #ffc107;
+            color: #333333;
+        }
+
+        .btn-warning:hover {
+            background-color: #ffca2c;
+            border-color: #ffca2c;
+            color: #333333;
+        }
+
+        /* Estilo para imagens do carrossel */
+        .carousel-image {
+            max-width: 100%; /* Largura máxima da imagem */
+            max-height: 400px; /* Altura máxima da imagem */
+            margin: auto; /* Centralizar imagem */
+        }
+
+       /*------ INÍCIO RODAPÉ ------*/
+#footer {
+    font-size: 13px; /* Ajusta o tamanho da fonte para 12 */
+}
+.footer-menu .nav-link {
+    color: #343a40; /* Cor do texto escura */
+    margin: 0 15px; /* Espaçamento entre itens */
+    transition: color 0.3s; /* Animação suave */
+}
+
+.footer-menu .nav-link:hover {
+    color: #F29F05; /* Cor do texto ao passar o mouse */
+}
+
+.social-icons .social-link {
+    color: #343a40; /* Cor do texto escura */
+    transition: color 0.3s; /* Animação suave */
+}
+
+.social-icons .social-link:hover {
+    color: #343a40;  /* Cor do texto ao passar o mouse */
+}
+
+.address-text {
+    color: #343a40; /* Cor do texto escura */
+}
+
+.copyright {
+    margin-top: 5px; /* Espaçamento superior */
+    font-size: 12px; /* Tamanho do texto */
+}
+
+   

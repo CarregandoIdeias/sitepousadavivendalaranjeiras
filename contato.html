@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Define a viewport para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Descrição do site para mecanismos de busca -->
+    <meta name="description" content="Descubra a serenidade na Pousada Vivenda das Laranjeiras, situada em Taquaritinga - SP. Oferecemos o refúgio perfeito para desfrutar de momentos especiais em um ambiente de conforto e conveniência, ideal para receber sua família e amigos. Encante-se com nossas acomodações acolhedoras e serviços dedicados, projetados para proporcionar uma estadia memorável. ">
+    <!-- Palavras-chave para mecanismos de busca -->
+    <meta name="keywords" content="vivenda laranjeiras, vivenda das laranjeiras, hotel vivenda laranjeiras, hotel pousada vivenda das laranjeiras, pousada vivenda das laranjeiras, hotel, hotel pousada, pousada, hotel em taquaritinga, hotel pousada em taquaritinga, pousada em taquaritinga, hotel interior de são paulo, hotel pousada interior de são paulo, pousada interior de são paulo, taquaritinga, interior, são paulo, hospedagem, acomodações, estadia, turismo, viagem, conforto, tranquilidade, lazer, relaxamento, férias, natureza, cidade histórica, atrações locais, pacotes de hospedagem, reservas, tarifas, promoções, café da manhã, piscina, Wi-Fi, estacionamento, quartos, suítes, chalés, eventos, família, casamentos, lua de mel">
+    <!-- Instruções para mecanismos de busca -->
+    <meta name="robots" content="index, follow">
+    <!-- Meta tag para especificar o autor do documento -->
+    <meta name="author" content="Carregando Ideias Agencia de Design">
+    <!-- Meta tag que indica o software ou plataforma utilizada para criar a página -->
+    <meta name="generator" content="Visual Studio Code">    
+
+    <title>Pousada Vivenda das Laranjeiras</title>
+
+    <!-- Tag para vincular o favicon ao seu site -->
+    <link rel="icon" href="assets/favicon/icon.ico" type="image/x-icon">
+    
+    <!-- Link para Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Link para Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Link para Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Link para o arquivo CSS separado -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Informações de contato -->
+    <div class="contact-info py-2">
+        <div class="container d-flex justify-content-start align-items-center">
+            <i class="fas fa-map-marker-alt me-2"></i>
+            Rua Antônio Nunes da Silva, 25 - Residencial Laranjeiras - Taquaritinga - SP
+        </div>
+    </div>
+
+    <!-- Barra amarela -->
+    <div class="yellow-bar"></div>
+
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <!-- Marca do hotel -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/imgs/Logo.png" alt="Logotipo do Hotel" class="navbar-logo">
+            </a>
+
+            <!-- Botão para exibir menu em telas menores -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu de navegação -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quartos.html">Suítes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <!-- Seção de contato -->
+    <section class="container my-5">
+        <section id="contato">
+                    <h2 class="section-title text-center">Contato</h2>
+        <div class="row">
+            <!-- Formulário de contato -->
+            <div class="col-md-6">
+                <form action="processar_contato.php" method="POST" class="contact-form">
+                    <!-- Campos do formulário -->
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" id="nome" name="nome" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" class="form-control" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-warning w-100">Enviar</button>
+                </form>
+            </div>
+
+            <!-- Mapa de localização -->
+            <div class="col-md-6">
+                <h3 class="section-title">Localização</h3>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.2640668002556!2d-48.49021338512017!3d-21.40762028581809!2m3!1f0!2f0!3f0!2m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b96f1c6171b955%3A0xe5d8f8baf5aa5f48!2sR.%20Ant%C3%B4nio%20Nunes%20da%20Silva%2C%2025%20-%20Residencial%20Laranjeiras%2C%20Taquaritinga%20-%20SP%2C%2015904-114!5e0!3m2!1sen!2sbr!4v1654029296479!5m2!1sen!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+    <!-- Seção de Footer -->
+    <section id="footer">
+        <footer class="d-flex flex-column py-4 border-top">
+            <!-- Logotipo à esquerda em dispositivos móveis -->
+            <div class="footer-logo d-flex justify-content-center mb-3">
+                <img src="assets/imgs/Logo.png" alt="Logotipo do Hotel" width="100">
+            </div>
+
+            <!-- Informações de contato e ícones de redes sociais -->
+            <div class="container text-center">
+                <p>Rua Antônio Nunes da Silva, 25<br>
+                    Residencial Laranjeiras<br>
+                    Taquaritinga - SP<br>
+                    CEP: 15904-114<br>
+                </p>
+
+                <!-- Links de contato -->
+                <div class="container d-flex justify-content-center">
+                    <!-- Ícones de redes sociais -->
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/pousadavivendadaslaranjeiras" target="_blank" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook fa-lg mx-2"></i>
+                        </a>
+                        <a href="https://www.instagram.com/vivendadaslaranjeiras/" target="_blank" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram fa-lg mx-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <br>
+
+                <!-- Direitos autorais -->
+                <div class="container text-center">
+                    <p>© 2024 Hotel Pousada Vivenda das Laranjeiras. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Scripts para Bootstrap e jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

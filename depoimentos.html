@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depoimentos - Nome do Hotel</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .testimonial-card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .testimonial-card p {
+            font-style: italic;
+        }
+        .carousel-inner {
+            max-height: 300px; /* Ajuste conforme necessário */
+        }
+        .form-container {
+            margin-top: 50px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="text-center">Depoimentos dos Nossos Hóspedes</h1>
+    <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Aqui vão os depoimentos -->
+            <div class="carousel-item active">
+                <div class="testimonial-card">
+                    <h2>Experiência Inesquecível</h2>
+                    <p>"Fiquei hospedado no [Nome do Hotel] durante minhas férias e não poderia ter pedido por uma experiência melhor. O serviço foi impecável, o quarto era espaçoso e elegantemente decorado, e a localização era perfeita. Definitivamente voltarei na próxima vez que estiver na região."</p>
+                    <p>- João Silva</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="testimonial-card">
+                    <h2>Atendimento Excepcional</h2>
+                    <p>"Desde o momento em que entrei no hotel até o momento do check-out, fui tratado com a mais alta qualidade de serviço. A equipe foi amigável, atenciosa e sempre disposta a ajudar. Mal posso esperar para voltar e desfrutar da hospitalidade novamente."</p>
+                    <p>- Maria Santos</p>
+                </div>
+            </div>
+            <!-- Adicione mais depoimentos conforme necessário -->
+        </div>
+        <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+
+    <!-- Formulário para enviar depoimentos -->
+    <div class="form-container">
+        <h2 class="text-center">Deixe seu Depoimento</h2>
+        <form id="testimonialForm">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="testimonial">Depoimento:</label>
+                <textarea class="form-control" id="testimonial" name="testimonial" rows="4" required></textarea>
+            </div>
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary">Enviar Depoimento</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    document.getElementById("testimonialForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evita o envio do formulário tradicional
+        
+        // Coleta os dados do formulário
+        var name = document.getElementById("name").value;
+        var testimonial = document.getElementById("testimonial").value;
+        
+        // Cria um novo elemento de depoimento e adiciona ao DOM
+        var newTestimonial = document.createElement("div");
+        newTestimonial.classList.add("carousel-item");
+        newTestimonial.innerHTML = '<div class="testimonial-card"><h2>Novo Depoimento</h2><p>' + testimonial + '</p><p>- ' + name + '</p></div>';
+        document.querySelector(".carousel-inner").appendChild(newTestimonial);
+        
+        // Limpa os campos do formulário
+        document.getElementById("name").value = "";
+        document.getElementById("testimonial").value = "";
+    });
+</script>
+
+</body>
+</html>

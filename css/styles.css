@@ -1,0 +1,250 @@
+/* Define a fonte padrão como Montserrat */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a, button, footer, navbar, section {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.whatsapp-fixo {
+    position: fixed;
+    bottom: 20px; /* Ajuste a posição vertical conforme necessário */
+    right: 20px; /* Ajuste a posição horizontal conforme necessário */
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp-fixo .botao-whatsapp {
+    margin-bottom: 10px;
+    animation: blink 1s infinite; /* Adiciona a animação de piscar */
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0; /* Define a opacidade para 0 na metade da animação */
+    }
+}
+
+.whatsapp-fixo .botao {
+    background-color: #25d366; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.whatsapp-fixo .botao:hover {
+    background-color: #128C7E; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.whatsapp-fixo img {
+    width: 60px; /* Ajuste o tamanho da imagem conforme necessário */
+    border-radius: 50%;
+    border: 2px solid #fff; /* Cor da borda */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    cursor: pointer;
+}
+
+/* Estilo para a seção de informações de contato */
+.contact-info {
+    background-color: #FFFFFF; /* Cor de fundo branca */
+    color: #000; /* Cor do texto preta */
+    text-align: center; /* Centraliza o texto */
+    padding: 8px 0; /* Espaçamento interno */
+    font-size: 12px;
+}
+
+.contact-info .fas.fa-map-marker-alt {
+    margin-right: 5px; /* Espaçamento à direita do ícone */
+}
+
+/* Estilo para a imagem do logotipo */
+.navbar-logo {
+    height: 80px; /* Reduz a altura para um visual mais elegante */
+    width: auto;
+}
+
+/* Estilo para a barra de navegação */
+.navbar-custom {
+    background-color: #f0f0f0; /* Cor de fundo mais suave */
+    padding: 10px 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra mais definida */
+}
+
+/* Estilo para os links de navegação */
+.nav-link {
+    color: #333; /* Cor do texto mais suave */
+    padding: 10px 20px; /* Espaçamento interno */
+    transition: all 0.3s ease-in-out; /* Transição suave */
+    text-decoration: none; /* Remove sublinhado */
+    border-radius: 5px; /* Cantos arredondados */
+    background-color: transparent; /* Fundo transparente inicialmente */
+    margin: 0 10px; /* Espaçamento entre cada item de menu */
+}
+
+.nav-link:hover {
+    color: #fff; /* Cor branca do texto durante hover */
+    background-color: #467302; /* Fundo verde durante hover */
+}
+
+/* Responsividade: dispositivos móveis */
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: flex; /* Mantenha a disposição flexível */
+        flex-direction: column; /* Organize os itens de menu em coluna */
+    }
+    
+    .nav-link {
+        margin: 5px 0; /* Espaçamento vertical entre os links */
+        border-radius: 5px; /* Cantos arredondados para cada item de menu */
+        width: auto; /* Permita que os itens se ajustem ao conteúdo */
+    }
+    
+    .nav-link:hover {
+        background-color: transparent; /* Mantém o fundo transparente */
+        text-decoration: underline; /* Adiciona sublinhado durante hover */
+        color: #467302; /* Cor verde para o texto durante hover */
+    }
+}
+
+/* Botão de pré-reserva */
+.btn-warning {
+    background-color: #F29F05;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: #467302; /* Cor de fundo verde durante hover */
+    color: #fff; /* Cor do texto branca durante hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para destaque */
+}
+
+/* Estilo global para o carrossel */
+.carousel {
+    width: 100%; /* Carrossel ocupa toda a largura disponível */
+}
+
+/* Estilo para as imagens do carrossel */
+.carousel img {
+    width: 100%; /* Imagens se ajustam à largura do carrossel */
+    height: auto; /* Mantém proporções originais */
+}
+
+/* Estilo para controles de navegação */
+.carousel-control-prev, .carousel-control-next {
+    width: 5%; /* Largura reduzida para controles */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(100%); /* Inverte as cores dos ícones para maior visibilidade */
+}
+
+/* Ajustes para legendas do carrossel */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro com transparência */
+    color: #fff; /* Texto branco para melhor contraste */
+    padding: 10px; /* Espaçamento interno para legendas */
+    font-size: 14px; /* Reduz o tamanho da fonte das legendas */
+}
+
+/* Estilos responsivos para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Ajusta a altura das imagens para dispositivos móveis */
+    .carousel img {
+        height: 25vh; /* Define a altura das imagens em 50% da altura da tela */
+        object-fit: cover; /* As imagens cobrem todo o carrossel */
+    }
+    
+    /* Ajusta os controles de navegação para dispositivos móveis */
+    .carousel-control-prev, .carousel-control-next {
+        width: 10%; /* Largura reduzida dos controles para dispositivos móveis */
+    }
+    
+    /* Ajusta o tamanho das legendas em dispositivos móveis */
+    .carousel-caption {
+        font-size: 12px; /* Reduz o tamanho da fonte das legendas */
+    }
+}
+
+/* Barra verde */
+.green-bar {
+    height: 10px;
+    background-color: #467302;
+}
+
+/* Barra amarela */
+.yellow-bar {
+    height: 10px;
+    background-color: #F29F05;
+}
+
+/* Estilo para as seções de texto */
+.section-text {
+    text-align: justify;
+}
+
+.text-section .section-title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.text-section ul {
+    list-style-type: disc;
+    margin-right: 2rem; /* Alinha as listas */
+}
+
+/* Estilização para os cartões */
+.card {
+    margin-bottom: 1rem; /* Espaçamento inferior */
+}
+
+.card-body i {
+    font-size: 3rem;
+    color: #F29F05; /* Cor amarela */
+    display: block; /* Bloco */
+    text-align: center; /* Centraliza */
+    margin-bottom: 10px;
+}
+
+.card-body h5, .card-body p {
+    text-align: center;
+}
+
+.card-body p {
+    text-align: justify;
+}
+
+/* Estilização para o rodapé */
+#footer {
+    font-size: 13px; /* Ajusta o tamanho da fonte para 12 */
+}
+
+.footer-menu .nav-link {
+    color: #343a40; /* Cor do texto escura */
+    margin: 0 15px; /* Espaçamento entre itens */
+    transition: color 0.3s; /* Animação suave */
+}
+
+.footer-menu .nav-link:hover {
+    color: #F29F05; /* Cor do texto ao passar o mouse */
+}
+
+.social-icons .social-link {
+    color: #343a40; /* Cor do texto escura */
+    transition: color 0.3s; /* Animação suave */
+}
+
+.social-icons .social-link:hover {
+    color: #343a40;  /* Cor do texto ao passar o mouse */
+}
+
+.address-text {
+    color: #343a40; /* Cor do texto escura */
+}
+
+.copyright {
+    margin-top: 5px; /* Espaçamento superior */
+    font-size: 12px; /* Tamanho do texto */
+}
